@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("WHAT IS YOUR AGE : ");
+        int inp = scanner.nextInt();
+        if (inp < 18 && inp >0){
+            System.out.println("YOU ARE A TEENAGER");
+        }
+        else if (inp >= 18 && inp < 50){
+            System.out.println("YOU ARE A ADULT");
+        }
+        else if (inp >= 50){
+            System.out.println("YOU ARE OLDER CITIZEN");
+        }
+        else{
+            System.out.println("YOU ARE NOT BORN STILL");
+        }
+    }
+}
